@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --pale-color: hsl(225, 100%, 94%);
+  --bright-color: hsl(245, 75%, 52%);
+  --very-blue: hsl(225, 100%, 98%);
+  --desaturated-color: hsl(224, 23%, 55%);
+  --dark-color: hsl(223, 47%, 23%);
+  --hover-color:rgb(153, 111, 200);
+}
+html{
+  font-size: 62.5%;
+  color: var(--desaturated-color);
+  font-family:"Red Hat Display";
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+h1,h2{
+  color: var(--dark-color);
+}
+h2{
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+p{
+  font-size: 1.4rem;
+}
+button{
+  background-color: var(--bright-color);
+  color: var(--very-blue);
+  border: none;
+  padding: 1.2rem 6rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  &:hover{
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+}
+a{
+  font-weight: 700;
+  color:var(--bright-color);
+  &:hover{
+  color: var(--hover-color);
+  cursor: pointer;
+  }
+}
+.main-section{
+  background-color: var(--pale-color); 
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 32rem;
+  min-height: 50rem;
+}
+.main-image{
+  width: 100%;
+  overflow: hidden;
+}
+.info-div{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+.plan-div{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--very-blue);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+}
+.last-para{
+  font-size: 1.2rem;
+  font-weight: 700;
+  &:hover{
+    color: var(--dark-color);
+    cursor: pointer;
+  }
+}
+
